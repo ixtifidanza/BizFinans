@@ -1,0 +1,123 @@
+.user {
+    padding: 60px 0 0 40px;
+    @media(max-width: 768px) {
+        padding: 25px 15px;
+        margin-top: 100px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        margin-bottom: 30px;
+        color: #01448E;
+        @media(max-width: 768px) {
+            font-size: 50px;
+        }
+        @media (max-width: 568px) {
+            font-size: 35px;
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        @media(max-width: 768px) {
+            justify-content: center;
+        }
+        @media (max-width: 568px) {
+            flex-direction: column;
+        }
+        
+    }
+    &__label {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #01448E;
+        @media(max-width: 768px) {
+            width: 50%;
+            align-items: center;
+        }
+    }
+    &__name {
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 51px;
+        color: #01448E;
+        margin-bottom: 15px;
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+    &__address {
+        font-size: 20px;
+        font-weight: 300;
+        color: #01448E;
+        margin-bottom: 10px;
+        span {
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
+        @media (max-width: 568px) {
+            font-size: 20px;
+        }
+    }
+    &__input {
+        background: #FFFCFC;
+        border: 1px solid #C8E4F3;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding: 20px;
+        width: 280px;
+        margin: 20px 0;
+        @media (max-width: 568px) {
+            width: 425px;
+        }
+        @media (max-width: 425px) {
+            width: 270px;
+        }
+
+        &:focus {
+            border-color: #95C1DA;
+        }
+    }
+    &__btn {
+        width: 220px;
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 50px;
+        border: none;
+        text-align: center;
+        color: #FFFDFD;
+        text-decoration: none;
+        background: #01448E;
+        border-radius: 10px;
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+    &__page {
+        display: none;
+        &.active {
+            display: block;
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+}

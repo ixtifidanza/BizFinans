@@ -1,0 +1,29 @@
+.consultation {
+    padding-top: 70px;
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        padding: 0 50px;
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+        br {
+        @media(max-width: 568px) {
+            display: none;
+        }
+        }
+        @media(max-width: 568px) {
+            padding: 0;
+            font-size: 25px;
+            margin: 10px 0;
+        }
+    }
+    &__tell img {
+        height: 100px;
+        @media(max-width: 568px) {
+            height: 70px;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.services {
+    &__title {
+        color: #162C55;
+        font-style: italic;
+        font-size: 48px;
+        text-align: center;
+        font-weight: bold;
+        margin: 70px 0;
+        @media (max-width: 768px) {
+            margin: 100px 0;
+        }
+        @media (max-width: 425px) {
+            font-size: 35px;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__box {
+        margin: 80px 0;
+        &:nth-child(2n){
+            @media (max-width: 768px) {
+                .services__item{
+                    flex-direction: column;
+                }
+            }
+        }
+        @media (max-width: 425px) {
+            margin: 40px 0;
+        }
+    }
+    &__img {
+        background-image: url(./../img/blonda.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+        display: block;
+        width: 314px;
+        height: 422px;
+      
+        @media (max-width: 768px) {
+            height: 374px;
+            width: 280px;
+        }
+    }
+    &__name {
+        background-color: rgba( 255, 255, 255, .9);
+        color: #162C55;
+        font-size: 16px;
+        padding: 15px 0;
+        margin-top: 300px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    &__text {
+        width: 70%;
+        font-size: 16px;
+        color: #000;
+        font-style: italic;
+        line-height: 1.5;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-top: 25px;
+        }
+        @media (max-width: 425px) {
+            text-align: center;
+        }
+    }
+}

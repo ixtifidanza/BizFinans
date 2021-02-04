@@ -1,0 +1,162 @@
+.conditions {
+    padding: 70px 0;
+    @media (max-width: 568px) {
+        padding: 50px 0;
+    }
+    &__title {
+        color: #333333;
+        font-size: 52px;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+        @media (max-width: 768px) {
+            margin-top: 50px;
+        }
+        @media (max-width: 568px) {
+            font-size: 30px;
+        }
+
+    }
+    &__subtitle {
+        color: #333333;
+        font-size: 20px;
+        text-align: center;
+        font-style: italic;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 50px;
+        margin: 70px 60px 30px;
+        border-radius: 20px;
+        border: 1px solid #01448e;
+        position: relative;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding: 10px;
+        }
+        @media (max-width: 568px) {
+            margin: 50px 0;
+        }
+    }
+    &__name {
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 22px;
+        color: #fff;
+        background: linear-gradient(298.99deg, #01448E 42.69%, rgba(29, 151, 172, 1) 145.88%);
+        border-radius: 20px;
+        padding: 5px 15px;
+        @media (max-width: 568px) {
+            text-align: center;
+            top: -5%;
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+    &__item {
+        font-size: 26px;
+        font-style: italic;
+        font-weight: bold;
+        color: #333333;
+        @media (max-width: 768px) {
+            margin: 10px 0;
+        }
+        @media (max-width: 568px) {
+            margin: 18px 0;
+        }
+    }
+    &__btn {
+        background: linear-gradient(298.99deg, #01448E 42.69%, rgba(29, 151, 172, 1) 145.88%);
+        border-radius: 30px;
+        height: 55px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        text-decoration: none;
+        color: #fff;
+        margin: 60px auto;
+        font-style: italic;
+        @media (max-width: 425px) {
+            width: 280px;
+        }
+    }
+    &__box {
+        background: linear-gradient(298.99deg, #01448E 42.69%, rgba(29, 151, 172, 1) 145.88%);
+        padding: 50px;
+        line-height: 1.5;
+        font-size: 26px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        font-style: italic;
+        @media (max-width: 568px) {
+            padding: 15px 0;
+            font-size: 20px;
+        }
+        &--ind {
+            padding: 20px;
+        }
+    }
+    &__inner {
+        width: 50%;
+        @media (max-width: 768px) {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &__zaim {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30px;
+    }
+    &__subname {
+        font-style: normal;
+    }
+    &__number {
+        line-height: 0.8;
+        font-weight: bold;
+        font-size: 220px;
+        @media (max-width: 768px) {
+            font-size: 100px;
+        }
+    }
+    &__inn {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__deadline {
+        font-size: 35px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__hours {
+        font-size: 120px;
+        text-transform: uppercase;
+        line-height: 0.7;
+        font-weight: bold;
+        @media (max-width: 768px) {
+            font-size: 90px;
+        }
+        @media (max-width: 425px) {
+            font-size: 70px;
+        }
+    }
+}

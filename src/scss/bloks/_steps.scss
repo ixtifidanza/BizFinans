@@ -1,0 +1,28 @@
+.steps {
+    &__title {
+        color: #162C55;
+        font-size: 52px;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        text-align: center;
+        @media (max-width: 568px) {
+            font-size: 35px;
+        }
+    }
+    &__item {
+        font-size: 32px;
+        font-style: italic;
+        margin-bottom: 30px;
+        padding-left: 50px;
+        @media (max-width: 568px) {
+            font-size: 28px;
+            text-align: center;
+            padding-left: 0;
+        }
+        img {
+            margin-right: 20px;
+        }
+    }
+}

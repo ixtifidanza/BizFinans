@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biznes Finance</title>
+    <link rel="stylesheet" href="./css/libs.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="flex main-container">
+        <div class="sidebar">
+            <a id="sidebarClose"  href="#">
+                <img  class="sidebar-close__icon" src="./img/close.svg" alt="">
+            </a>
+            <a href="#" class="sidebar__logo">
+                <img src="./img/logo-white.png" alt="Logo">
+            </a>
+
+            <div class="sidebar__cabinet flex">
+                <div class="nav__cabinet-avatar">
+                    <img src="./img/user.png" alt="UserName">
+                </div>
+                личный кабинет
+            </div>
+      
+            <ul class="sidebar__list" id="user-page">
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Личные данные</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Микрозайм</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Транзакции</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">Филиалы</a></li>
+                <div class="sidebar-line"></div>
+                <div class="sidebar-nav">
+                    <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link active">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                </div>
+            </ul>
+            <div class="sidebar__advertising">Онлайн заявка <br> на получение кредита</div>
+            <div class="sidebar__currency">
+                <div class="sidebar__title">Курс валют ЦБ</div>
+                <div class="sidebar__currency-item">
+                    <span>1 USD</span>
+                    <span>9547.05 UZS</span>
+                </div>
+                <div class="sidebar__currency-item">
+                    <span>1 EUR</span>
+                    <span>10547.05 UZS</span>
+                </div>
+                <div class="sidebar__currency-item">
+                    <span>1 RUB</span>
+                    <span>147.05 UZS</span>
+                </div>
+            </div>
+            <div class="sidebar__contacts">
+                <a href="tel:+998712000097" class="sidebar__num">+998 (71) 200-00-97</a>
+                <a href="tel:+998712037765" class="sidebar__num">+998 (71) 203-77-65</a>
+                <a href="tel:+998712000046" class="sidebar__num">+998 (71) 200-00-46</a>
+                <a href="tel:+998712000047" class="sidebar__num">+998 (71) 200-00-47</a>
+                <a href="mailto:info@bizfin.uz" class="sidebar__num">info@bizfin.uz</a>
+            </div>
+        </div>
+        <div class="page">
+            <nav class="nav">
+                <div class="wrapper flex">
+                    <div class="nav-menu__burger">
+                        <div id="sidebarOpen" class="nav__burger">
+                            <img src="./img/menu.svg" alt="Menu">
+                        </div>
+                        <a href="#" class="nav-logo">
+                            <img src="./img/logo-white.png" alt="Logo">
+                        </a>
+                     
+                    </div>
+                    <ul class="nav__list flex">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    </ul>
+                    <div class="nav__cabinet flex">
+                        <div class="nav__cabinet-avatar">
+                            <img src="./img/user.png" alt="UserName">
+                        </div>
+                        личный кабинет
+                    </div>
+                </div>
+            </nav>
+
+            <div class="user">
+                <form class="user__page active user__form">
+                    <div class="user__title">Личные данные</div>
+                    <div class="user__box">
+                        <label class="user__label">
+                            Ваше имя
+                            <input class="user__input" type="text">
+                        </label>
+                        <label class="user__label">
+                            Ваше отчество
+                            <input class="user__input" type="text">
+                        </label>
+                        <label class="user__label">
+                            Ваша фамилия
+                            <input class="user__input" type="text">
+                        </label>
+                        <label class="user__label">
+                            Ваш e-mail
+                            <input class="user__input" type="text">
+                        </label>
+                        <label class="user__label">
+                            Ваше номер телефона
+                            <input class="user__input" type="text">
+                        </label>
+                        <label class="user__label">
+                            Дата рождения
+                            <input class="user__input" type="text">
+                        </label>
+                    </div>
+                    <div class="user__title">Изменить пароль</div>
+                    <div class="user__box">
+                        <label class="user__label">
+                            Старый пароль
+                            <input class="user__input" type="password">
+                        </label>
+                        <label class="user__label">
+                            Новый пароль
+                            <input class="user__input" type="password">
+                        </label>
+                        <label class="user__label">
+                            Повторите новый пароль
+                            <input class="user__input" type="password">
+                        </label>
+                    </div>
+                    <button class="user__btn" type="submit">Сохранить</button>
+                </form>
+                <!-- у вас нету займов -->
+                <div class="user__page">
+                    <div class="user__title">У вас нету займов</div>
+                </div>
+                <div class="user__page content">
+                    <div class="user__title">Ваши транзакции</div>
+                    <div class="content__table">
+                        <table class="table">
+                            <tr>
+                                <th>ID займа</th>
+                                <th>Информация</th>
+                                <th>Статус</th>
+                                <th>Остаток платежа(UZS)</th>
+                                <th>Дата закрытия займа</th>
+                            </tr>
+                            <tr class="table__info">
+                                <th>72578</th>
+                                <th>Сумма займа - <span id="summ">600 000</span> сум<br> Ставка - <span id="procent">12</span> % <br> Платеж по процентам - <span id="pay-procent">70 000</span> сум <br> Общая сумма кредита - <span id="pay-summ">670 000</span>сум</th>
+                                <th>Активна</th>
+                                <th>22 000</th>
+                                <th>21.01.2021</th>
+                            </tr>
+                            <tr class="table__info">
+                                <th>72578</th>
+                                <th>Сумма займа - <span id="summ">600 000</span> сум<br> Ставка - <span id="procent">12</span> % <br> Платеж по процентам - <span id="pay-procent">70 000</span> сум <br> Общая сумма кредита - <span id="pay-summ">670 000</span>сум</th>
+                                <th>Активна</th>
+                                <th>22 000</th>
+                                <th>21.01.2021</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="user__page">
+                    <div class="user__title">Наши филиалы</div>
+                    <div class="user__info">
+                        <div class="user__name">Г. Ташкент</div>
+                        <div class="user__address"><span>Адрес:</span> Темирюльский район, ул. Нарпайская 6а 1</div>
+                        <div class="user__address"><span>Телефон:</span> +998 71 2504224 </div>
+                        <div class="user__address"><span>E-mail:</span> shtatka@kredit24.uz</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup">
+                <div class="popup__block">
+                    <div class="popup__close">
+                        <div class="popup__inner">
+                            <img src="./img/close.svg" alt="x">
+                        </div>
+                    </div>
+                    <div class="popup__content popup__content--1" style="display: none;">
+                        <div class="popup__title">Форма заявки на получение займа</div>
+                        <img class="popup__step" src="./img/step1.png" alt="1">
+                        <label class="popup__label popup__label--range">
+                            <span class="flex flex--between">
+                                <span class="popup__label-big">Я хочу получить</span>
+                                <span class="popup__label-val resultrange">600 000 сум</span>
+                            </span>
+                            <input id="range" type="range" min="100000" step="50000" value="600000" max="20000000">
+                            <span class="flex flex--between">
+                                <span class="popup__label-price">от 100 000</span>
+                                <span class="popup__label-price">до 20 000 000</span>
+                            </span>
+                        </label>
+                        <label class="popup__label popup__label--range">
+                            <span class="flex flex--between">
+                                <span class="popup__label-big">Срок возврата</span>
+                                <span class="popup__label-val resultrange3">6 месяцев</span>
+                            </span>
+                            <input id="resDate" type="range" min="3" step="1" value="6" max="18">
+                            <span class="flex flex--between">
+                                <span class="popup__label-price">от 3 месяцев</span>
+                                <span class="popup__label-price">до 18 месяцев</span>
+                            </span>
+                        </label>
+                        <div class="popup__inn flex">
+                            <div class="popup__info">
+                                <div class="popup__item flex flex--between">
+                                    <div class="popup__name">Ставка</div>
+                                    <div class="popup__val formProcent"><span class="kredit-procent" data-procent="35">35</span>%</div>
+                                </div>
+                                <div class="popup__item flex flex--between">
+                                    <div class="popup__name">Платеж по процентам</div>
+                                    <div class="popup__val resultrange2">70 000 сум</div>
+                                </div>
+                                <div class="popup__item flex flex--between">
+                                    <div class="popup__name">Итоговая сумма кредита</div>
+                                    <div class="popup__val resultrange1">670 000 сум</div>
+                                </div>
+                            </div>
+                            <a href="#" class="button user__btn showPopup1">Далее</a>
+                        </div>
+                    </div>
+                    <div class="popup__content popup__content--2" style="display: none;">
+                        <div class="popup__back"><img src="./img/arr-r.svg" alt="Back"></div>
+                        <div class="popup__title">Форма заявки на получение займа</div>
+                        <img class="popup__step" src="./img/step2.png" alt="2">
+                        <div class="popup__form">
+                            <form enctype="multipart/form-data" id="uploadImages">
+                                <label class="file">
+                                    <span class="flex flex--between">
+                                        <span class="file__title">Прикрепите паспортные данные</span>
+                                        <span class="file__add">Прикрепить+</span>
+                                    </span>
+                                    <input type="file" id="addImages" multiple="">
+                                    <input type="hidden" name="azaza" value="zazaza">
+
+                                    <ul class="popup__list" id="uploadImagesList">
+                                        <li class="popup__item template">
+                                            <span class="popup__img-wrap">
+                                                <img class="file__img" src="./img/add-image.png" alt="Image">
+                                            </span>
+                                        </li>
+                                        <li class="popup__item">
+                                            <span class="popup__img-wrap">
+                                                <img class="file__img" src="./img/add-image.png" alt="Image">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </label>
+                                <label class="file">
+                                    <span class="flex flex--between">
+                                        <span class="file__title">Прикрепите паспортные данные</span>
+                                        <span class="file__add">Прикрепить+</span>
+                                    </span>
+                                    <input type="file" id="addImages1" multiple="">
+                                    <input type="hidden" name="azaza" value="zazaza">
+
+                                    <ul class="popup__list" id="uploadImagesList1">
+                                        <li class="popup__item template">
+                                            <span class="popup__img-wrap">
+                                                <img class="file__img" src="./img/add-image.png" alt="Image">
+                                            </span>
+                                        </li>
+                                        <li class="popup__item">
+                                            <span class="popup__img-wrap">
+                                                <img class="file__img" src="./img/add-image.png" alt="Image">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </label>
+                            </form>
+                            <a href="#" class="button user__btn showPopup2">Далее</a>
+                        </div>
+                    </div>
+                    <div class="popup__content popup__content--3" style="display: none;">
+                        <div class="popup__title">Форма заявки на получение займа</div>
+                        <img class="popup__step popup__step--big" src="./img/check.png" alt="Check">
+                        <div class="popup__form popup__form--col">
+                            <div class="reg__step reg__step--active reg__step--final"><img src="./img/check.svg" alt="Check"></div>
+                            <div class="h1 popup__final">Ваша заявка <br> передана на обработку</div>
+                            <a href="#" class="button user__btn popup__close">Завершить</a>
+                        </div>
+                    </div>
+                    <div class="popup__content popup__content--expect" style="display: none;">
+                        <div class="popup__title">Форма заявки на получение займа</div>
+                        <div class="popup__title popup__title--mini">Вы не можете создать заявку на данный момент, так как ваша прежняя заявка находится в статусе «Ожидает».</div>
+                        <a href="#" class="button user__btn popup__close">Ок</a>
+                    </div>
+                    <div class="popup__content popup__content--nozaim" style="display: none;">
+                        <div class="popup__title">Форма заявки на получение займа</div>
+                        <div class="popup__title popup__title--mini">Вы не можете создать заявку на данный момент, так как ваша прежняя заявка была отклонена. Вы можете подать заявку повторно, спустя 30 дней со дня последней попытки.</div>
+                        <a href="#" class="button user__btn popup__close">Ок</a>
+                    </div>
+                    <div class="popup__content popup__content--nopay" style="display: none;">
+                        <div class="popup__title">Форма заявки на получение займа</div>
+                        <div class="popup__title popup__title--mini">Вы не можете создать заявку на данный момент, так как вы еще не оплатили свой последний займ.</div>
+                        <a href="#" class="button user__btn popup__close">Ок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">Разработано в студии <a href="http://qwerty.uz">QWERTY</a></div>
+        </div>
+    </div>
+
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

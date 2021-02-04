@@ -1,0 +1,38 @@
+.target {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media (max-width: 568px) {
+            padding: 0;
+        }
+    }
+    &__title {
+        display: inline-block;
+        background: linear-gradient(298.99deg, #01448E 42.69%, rgba(29, 151, 172, 0.78) 125.88%);
+        margin-bottom: 30px;
+        padding: 10px 30px;
+        font-size: 52px;
+        font-style: italic;
+        color: #fff;
+        text-transform: uppercase;
+        @media (max-width: 425px) {
+            text-align: center;
+            font-size: 34px;
+            width: 100%;
+        }
+    }
+    &__text {
+        padding: 30px;
+        font-size: 16px;
+        color: #000;
+        font-style: italic;
+        line-height: 1.5;
+        font-weight: bold;
+        @media (max-width: 568px) {
+            text-align: center;
+            padding: 20px;
+        }
+
+    }
+}

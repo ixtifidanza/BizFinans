@@ -1,0 +1,61 @@
+.calculator {
+    background-image: url(./../img/banner.png);
+    background-size: cover;
+    padding: 50px 30px 100px 30px;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &__title {
+        color: #fff;
+        font-size: 52px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+        @media(max-width: 425px) {
+            font-size: 30px;
+        }
+    }
+    &__form {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: flex-end;
+        @media (max-width: 568px) {
+            align-items: center;
+            
+        }
+    }
+    &__select {
+        border: none;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    &__label {
+        width: 300px;
+        color: #fff;
+        margin: 0 0 30px 0;
+        text-align: center;
+        input {
+            @media (max-width: 568px) {
+                margin: 5px 0;
+              
+            }
+        }
+    }
+    &__btn {
+        background-color: #F0A621;
+        width: 300px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+    }
+}

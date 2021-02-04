@@ -1,0 +1,28 @@
+.table {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    @media (max-width: 568px) {
+        width: 700px;
+        overflow-y: scroll;
+    }
+    @media (max-width: 425px) {
+        width: 100%;
+    }
+    th {
+        color: #373435;
+        padding: 0 0 12px 0;
+        border-spacing: 0;
+    }
+    &__info {
+        th {
+            padding: 13px 0 13px 0;
+            border-spacing: 0;
+            color: #707070;
+            font-weight: 400;
+            border-top: 1px solid #373435;
+        }
+    }
+}
